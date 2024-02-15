@@ -11,18 +11,18 @@ import {
   User,
   icons,
 } from "lucide-react";
-import Button from "@/components/Button";
+import { Button } from "@/components/Button";
 function PageHeader() {
   const [showFullWidthSearch, setShowFullWidthSearch] = useState(false);
   return (
-    <div className="flex gap-10 lg:gap-20 justify-between pt-2 mb-6 mx-4">
+    <div className="flex gap-10 lg:gap-20 justify-between py-2 mb-6 px-4 bg-[#422006]">
       <div
         className={`flex gap-4 items-center flex-shrink-0 ${
           showFullWidthSearch ? "hidden" : "flex"
         }`}
       >
         <Button variant={"ghost"}>
-          <Menu />
+          <Menu color="white" />
         </Button>
         <a href="/">
           <img src={logo} className="h-6" />
@@ -39,7 +39,7 @@ function PageHeader() {
           variant={"ghost"}
           className={`${showFullWidthSearch ? "flex" : "hidden"}`}
         >
-          <ArrowLeft />
+          <ArrowLeft color="white" />
         </Button>
         <div className="flex flex-grow max-w-[600px]">
           <input
@@ -52,7 +52,7 @@ function PageHeader() {
           </Button>
         </div>
         <Button size={"icon"} variant={"ghost"} className="flex-shrink-0">
-          <Mic />
+          <Mic color="white" />
         </Button>
       </form>
       <div
@@ -66,19 +66,19 @@ function PageHeader() {
           variant={"ghost"}
           className="md:hidden"
         >
-          <Search />
+          <Search color="white" />
         </Button>
         <Button size={"icon"} variant={"ghost"} className="md:hidden">
-          <Mic />
+          <Mic color="white" />
         </Button>
         <Button size={"icon"} variant={"ghost"}>
-          <Upload />
+          <Upload color="white" />
         </Button>
         <Button size={"icon"} variant={"ghost"}>
-          <Bell />
+          <Bell color="white" />
         </Button>
         <Button size={"icon"} variant={"ghost"}>
-          <User />
+          <User color="white" />
         </Button>
       </div>
     </div>
