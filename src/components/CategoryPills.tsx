@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import Button from "./Button";
+import { Button } from "./Button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const TRANSLATE_AMOUNT = 200;
